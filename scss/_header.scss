@@ -1,0 +1,111 @@
+.header {
+    width: 100%;
+    margin: auto;
+    max-width: 1200px;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+
+    flex-wrap: wrap;
+    justify-content: flex-start;
+    border: solid 0.5p var(--secundary-color);
+    background: var(--primary-color);
+    color: var(--secundary-color);
+  }
+  
+  .header__button {
+    display: block;
+    cursor: pointer;
+    width: 3em;
+    background-color: transparent;
+    border:none;
+
+  }
+  .header__svg{
+    color:var(--secundary-color);
+    border: 1px solid var(--secundary-color);
+    fill:var(--secundary-color);
+
+  }
+  
+  .nav {
+    display: none;  
+  }
+  .nav__activo{
+    display:block;
+    // background: #5c4175;
+  }
+ 
+
+  .nav__menu {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: nowrap;
+    justify-content: flex-start;
+  }
+  
+  .nav__item {
+    list-style: none;
+    padding: 0.5em;
+    width: 100%; 
+   }
+  
+  .nav__a {
+    text-decoration: none;
+    color: var(--secundary-color);
+    display: block;
+    width: 100%;
+    padding: 1em;
+  }
+  
+  .nav__a:hover {
+    color: var(--primary-color);
+    background:var(--secundary-color) ;
+  }
+
+  .nav__menu--desplegable{
+    display: none;
+    background: red;
+    width: 100%;
+   
+  }
+  .nav__menu--activo{
+    display: block;
+    // background: aquamarine;
+    padding: 1em 0 1em 0;;
+    color: var(--secundary-color);
+    background: var(--primary--color);
+    border: 0.5px solid var(--secundary-color);
+   
+  }
+  .header__titulo {
+    padding: 3em;
+    // border: solid 0.5px #fff0f0;
+  }
+  
+  .header__titulo--p {
+    font-family: "Square Peg", cursive;
+    font-size: 1.5em;
+  }
+
+  // @media screen and (orientation: landscape) {
+  //    .header__svg{
+  //     display: none;
+  //   }
+  //   .nav{
+  //     display: block;
+  //   }
+  //   .nav__menu{
+  //     flex-direction: row;
+  //     justify-content: flex-start;
+  //     // background-color: #5c4175;
+  //     display: block;
+  //     padding: 1em 0;
+     
+  //   }
+  //   .nav__item{
+  //     display: inline;
+  //   }
+    
+  //}

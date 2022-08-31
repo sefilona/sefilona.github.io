@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/main.css">
+    <!-- fuentes de google fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400&family=Square+Peg&display=swap" rel="stylesheet"> 
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,400;0,500;0,600;1,500&family=Open+Sans&display=swap" rel="stylesheet"> 
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Nanum+Myeongjo&family=Nunito:ital,wght@0,400;0,500;0,600;1,500&family=Open+Sans&display=swap" rel="stylesheet"> 
+    <link rel="stylesheet" href="css/app.css">
+    <title>Micarpechy en Github</title>
+</head>
+<body>
+            
+<div class="contenedor-general">        
+        <!--  HEADER /////////////////////////// -->
+    <header class="header">  
+        <button class="header__button" type="button"><svg class="header__svg" xmlns="http://www.w3.org/2000/svg" width="32" height="32"viewBox="0 0 16 16">
+        <path fill-rule="evenodd" d="M2.5 12a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5zm0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5zm0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5z"/>
+        </svg></button>
+
+        
+             <!-- menú -->
+             <nav class="nav nav--activo" id="menu"> 
+                <ul class="nav__menu">
+                <li class="nav__item">
+                <a href="#" class="nav__a">Inicio</a>
+                </li>
+                <li class="nav__menu">
+                <a href="#" class="nav__a nav__a--desplegable" >Productos</a>
+                    <ul class="nav__menu--desplegable nav__menu--activo" id="submenu">
+                        <li> <a href="#" class="nav__a" >Fundas para Biblias</a></li>
+                        <li> <a href="#" class="nav__a" >Fundas para libros</a></li>
+                        <li> <a href="#" class="nav__a" >Portarevistas</a></li>
+                    </ul>
+                </li >
+                <li class="nav__item">
+                <a href="#" class="nav__a" >Contacto</a>
+                </li>
+            </ul>
+        </nav> 
+
+            <!-- título -->
+            <div class="header__titulo">
+                <h1 class="header__titulo--h1">Micarpechy</h1>
+                <p class="header__titulo--p">Fundas artesanas para publicaciones</p>
+            </div>
+        </header>
+    
+        
+        <section class="section">
+        <!-- GALERIA 1 /////////////////////////// -->
+            <div class="section__wrapper">
+                <div class="section__wrapper--btn-atras" type="button" id="btn_atras" onclick="atras()" >
+                    <p class="section__wrapper--flecha"><</p>
+                </div>
+                <div class="section__wrapper--portafotos">
+                    <img src="img/2.jpg" alt="foto de galería" id="foto" width="100%">
+                </div>
+                <div class="section__wrapper--btn-adelante" type="button" id="btn_adelante" onclick="adelante()" >
+                    <p class="section__wrapper--flecha">></p>
+                </div>
+            </div>
+        <!-- GALERIA 2 /////////////////////////// -->
+
+        </section>
+
+        <!-- FOOTER /////////////////////////// -->
+        <footer class="footer"></footer>
+
+    </div>
+    <script src="js.js"></script>
+</body>
+</html>

@@ -1,0 +1,102 @@
+.section {
+    border: solid 0.5px #fff0f0;
+    margin: auto;
+    width: 90%;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -khtml-user-select: none;
+    display: flex;
+    flex-direction: column;
+    align-content: flex-start;
+    align-items: center;
+    border: solid 0.5px #fff0f0;
+    border: solid 0.5px #fff0f0;
+    margin-top: 2em;
+    box-shadow: 0.25em 0.25em 0.5em #999;
+    -moz-window-shadow: 0.25em 0.25em 0.5em #999;
+    -webkit-box-shadow: 0.25em 0.25em 0.5em #999F;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+  }
+  
+  @media screen and (orientation: landscape) {
+    .section {
+      width: 100%;
+    }
+  }
+  
+  @media screen and (orientation: landscape) {
+    .section__wrapper {
+      width: 90%;
+      display: flex;
+      flex-direction: row;
+      align-items: center;
+    }
+  }
+  
+  .section__wrapper--btn-atras {
+    font-family: "Nanum Myeongjo", serif;
+    width: 100%;
+    border: solid 0.5px #fff0f0;
+  
+    p {
+      text-align: center;
+      padding: 1em 0;
+      width: 100%;
+    }
+  }
+  
+  @media screen and (orientation: landscape) {
+    .section__wrapper--btn-atras {
+      border: solid 0.5px #fff0f0;
+      width: 10%;
+      height: 100%;
+      display: flex;
+    }
+  }
+  
+  @media screen and (orientation: landscape) {
+    section__wrapper--btn-atras p {
+      padding: 2em 1.5em;
+    }
+  }
+  
+  .section__wrapper--portafotos {
+    display: flex;
+    align-content: center;
+  }
+  
+  @media screen and (orientation: landscape) {
+    .section__wrapper--portafotos {
+      width: 100%;
+    }
+  }
+  
+  .section__wrapper--btn-adelante {
+    width: 100%;
+    font-family: "Nanum Myeongjo", serif;
+    border: solid 0.5px #fff0f0;
+  }
+  
+  @media screen and (orientation: landscape) {
+    .section__wrapper--btn-adelante {
+      width: 10%;
+      height: 100%;
+      display: flex;
+      align-items: center;
+      border: solid 0.5px #fff0f0;
+    }
+  }
+  
+  .section__wrapper--flecha {
+    text-align: center;
+    padding: 1em 0;
+    width: 100%;
+  }
+  
+  @media screen and (orientation: landscape) {
+    .section__wrapper--flecha {
+      padding: 2em 1.5em;
+    }
+  }

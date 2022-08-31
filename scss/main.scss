@@ -1,0 +1,40 @@
+
+@import 'header';
+@import 'section';
+@import 'footer';
+
+
+  
+ 
+  
+
+  
+  * {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    list-style-type: none;
+    --primary-color:#000;
+    --secundary-color:#fff;
+  }
+  
+  body {
+    font-family: "Nunito", sans-serif;
+    font-size: 16px;
+    
+  
+    .contenedor-general {
+      margin: auto;
+  
+      /* background-color: aqua; */
+      width: 100%;
+      max-width: 1200px;
+      display: flex;
+      flex-direction: column;
+      overflow: hidden;
+      box-shadow: 0.25em 0.25em 0.5em #999;
+      -moz-window-shadow: 0.25em 0.25em 0.5em #999;
+      -webkit-box-shadow: 0.25em 0.25em 0.5em #999;
+    }
+  }
