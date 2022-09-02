@@ -177,6 +177,7 @@ img {
   }
 }
 .section__wrapper--btn-atras {
+  color: var(--secundary-color);
   font-family: "Nanum Myeongjo", serif;
   width: 100%;
 }
@@ -211,6 +212,7 @@ img {
 .section__wrapper--btn-adelante {
   width: 100%;
   font-family: "Nanum Myeongjo", serif;
+  color: var(--secundary-color);
 }
 
 @media screen and (orientation: landscape) {
@@ -245,8 +247,8 @@ img {
   list-style-type: none;
   --primary-color:#000;
   --secundary-color:#fff;
-  --terciary-color: rgba(203,96,179,1);
-  --quarternary-color:#a80077;
+  --terciary-color: rgb(255, 136, 0);
+  --quarternary-color:#caac00;
 }
 
 body {
