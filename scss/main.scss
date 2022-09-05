@@ -36,8 +36,8 @@
       flex-direction: column;
       overflow: hidden;
 
-      box-shadow: 0.25em 0.25em 0.5em var(--quarternary-color);
-      -moz-window-shadow: 0.25em 0.25em 0.5em var(--quarternary-color);
-      -webkit-box-shadow: 0.25em 0.25em 0.5em var(--quarternary-color);
+      box-shadow: 0.25em 0.25em 0.25em var(--primary-color);
+      -moz-window-shadow: 0.25em 0.25em 0.25em var(--primary-color);
+      -webkit-box-shadow: 0.25em 0.25em 0.25em var(--primary-color);
     }
   }
