@@ -3,22 +3,20 @@
 @import 'section';
 @import 'footer';
 
-
-  
- 
-  
-
-  
   * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
     text-decoration: none;
     list-style-type: none;
-    --primary-color:#000;
-    --secundary-color:#fff;
-    --terciary-color: rgb(255, 136, 0);
-    --quarternary-color:#caac00;
+    --negro:#000;
+    --blanco:#fff;
+    --color-uno: rgb(255, 163, 59);
+    --color-dos:#caac00;
+
+    --radio-borde:0.2em;
+    
+    transition:.25s ease-in-out;
   }
   
   body {

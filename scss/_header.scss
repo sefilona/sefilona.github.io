@@ -8,41 +8,46 @@
 
     flex-wrap: wrap;
     justify-content: flex-start;
-    border: solid 0.5p var(--secundary-color);
-    background: var(--terciary-color);
-    color: var(--secundary-color);
+    border: solid 0.5p var(--blanco);
+    background: var(--color-uno);
+    color: var(--blanco);
+    background-color: #ffc078;
+    background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='24' height='24' viewBox='0 0 24 24'%3E%3Cg fill='%23ff8800' fill-opacity='0.4'%3E%3Cpolygon fill-rule='evenodd' points='8 4 12 6 8 8 6 12 4 8 0 6 4 4 6 0 8 4'/%3E%3C/g%3E%3C/svg%3E");
   }
   
   .header__button {
-   
+    width: 32px;
+    height: 32px;
+    position: relative;
     display: block;
     cursor: pointer;
-    width: 2em;
-    background-color: var(--terciary-color);
-    border:solid 0.5px black;
-    border-radius:0.5em;
-
-  }
-  .header__button:hover{
-    background-color:var(--terciary-color);
-    border:solid 0.5px white;
-
-  }
-
-
-  .header__svg{
-    
-    width: 100%;
-    height: 100%;
-    // color:var(--primary--color);
-
-    fill:var(--primary--color);
+    background-color:transparent;
+    border:solid 0.5px transparent;
   
   }
-  .header__svg:hover{
-    fill:var(--secundary-color);
+
+  .header__svg--cerrado{
+    background-color: var(--color-uno);
+    position: absolute;
+    left:0;
+    top:0;
+    width: 32px;
+    height: 32px;
+    display: none;
+    z-index: 1;
+ 
   }
-  
+
+  .header__svg--abierto{
+    left:0;
+    top:0;
+    position: absolute;
+    width: 32px;
+    height: 32px;
+    display: block;
+
+   
+  }
   .nav {
     display: none;  
   }
@@ -53,11 +58,11 @@
   // .nav__a--desplegable::after{
   //   position: absolute;
   //   content: "";
-  //   color: var(--terciary-color);
+  //   color: var(--color-uno);
 
   //   width: 0;
   //   height: 0;
-  //   border-left: 1em solid var(--terciary-color);
+  //   border-left: 1em solid var(--color-uno);
   //   border-right: 1em solid transparent;
   //   border-bottom:0.5em solid transparent;
   //   border-top: 0.5em solid transparent;
@@ -66,17 +71,17 @@
   //   right:17em;
   // }
 
-  // .nav__a--desplegable:hover::after{
+  // .nav__a--desplegable:active::after{
   //   position: absolute;
   //   content: "";
-  //   color: var(--terciary-color);
+  //   color: var(--color-uno);
 
   //   width: 0;
   //   height: 0;
   //   border-left: 0.5em solid transparent;
   //   border-right: 0.5em solid transparent;
   //   border-bottom:1em solid transparent;
-  //   border-top:1em solid var(--terciary-color);
+  //   border-top:1em solid var(--color-uno);
 
   //   top:1.3em;
   //   right:18em;
@@ -113,17 +118,22 @@
   
   .nav__a {
     text-decoration: none;
-    color: var(--primary-color);
+    color: var(--negro);
     display: block;
-    width: 100%;
+    width: 50%;
     padding: 1em;
+    
   }
   
-  .nav__a:hover {
+  .nav__a:focus {
+    margin-left: 0.5em;
+    padding: 1em 0.5em 1em 1em;
     width: 50%;
-    color:var(--secundary-color);
-    border: solid 0.5px var(--secundary-color);;
+    color:var(--blanco);
+    border: solid 0.5px var(--blanco);
     border-radius: 0.5em;
+  
+    transition-duration: 0.5s;
   }
 
   .nav__menu--desplegable{
@@ -134,16 +144,16 @@
   .nav__menu--activo{
     display: block;
     padding: 1em 2em 1em 0;;
-    color: var(--secundary-color);
+    color: var(--blanco);
     background: var(--primary--color);
   }
   .header__titulo {
-    color: var(--primary-color); 
-    background: var(--terciary-color);  
+    color: var(--negro); 
+    background: var(--color-uno);  
 
-    margin:1em;
+  
     width: 300px;
-    margin: 0 auto 1em auto;
+    margin: 1em auto 1em auto;
     padding: 0.5em 0 0.5em 0;
 
     text-align: center;
@@ -151,17 +161,14 @@
     display: flex;
     flex-direction: column;
     align-items: center;
-    border: solid 0.5px var(--primary-color);;
+    border: solid 0.5px var(--negro);;
     border-radius: 0.5em;
   }
-  // .header__titulo--h1{
-
-  // }
+ 
   
   .header__titulo--p {
    
     // font-family: "Square Peg", cursive;
     font-weight: 600;
     font-size: 1em;
-
- }
+  }

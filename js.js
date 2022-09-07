@@ -21,15 +21,27 @@ function atras() {
 
 const button = document.querySelector('.header__button');
 const nav = document.querySelector('.nav');
+const openIconMenu = document.querySelector('.header__svg--abierto');
+const closeIconMenu = document.querySelector('.header__svg--cerrado');
 
 button.addEventListener('click', ()=>{
-    nav.classList.toggle('nav__activo')   
+   let estadoMenu = nav.classList.toggle('nav__activo');
+   estadoMenu === true ? ( closeIconMenu.style.display = 'block') : ( closeIconMenu.style.display = 'none') ;
+    
+
 } )
+
+
+
+
 
 const enlaceDesplegable = document.querySelector('.nav__a--desplegable');
 const submenu = document.querySelector('.nav__menu--desplegable');
 
 enlaceDesplegable.addEventListener('click', ()=>{
-    submenu.classList.toggle('nav__menu--activo')  
+    submenu.classList.toggle('nav__menu--activo')
+
 } )
+
+
 
