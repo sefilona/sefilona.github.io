@@ -27,14 +27,7 @@ const closeIconMenu = document.querySelector('.header__svg--cerrado');
 button.addEventListener('click', ()=>{
    let estadoMenu = nav.classList.toggle('nav__activo');
    estadoMenu === true ? ( closeIconMenu.style.display = 'block') : ( closeIconMenu.style.display = 'none') ;
-    
-
 } )
-
-
-
-
-
 const enlaceDesplegable = document.querySelector('.nav__a--desplegable');
 const submenu = document.querySelector('.nav__menu--desplegable');
 
@@ -42,6 +35,22 @@ enlaceDesplegable.addEventListener('click', ()=>{
     submenu.classList.toggle('nav__menu--activo')
 
 } )
+// const conjuntoIconos = document.getElementsByTagName("svg");
+
+// const colorNavAbierto = conjuntoIconos[0].firstElementChild;
+// const colorNavCerrado = conjuntoIconos[1].firstElementChild;
+// const colorIconLlamar = conjuntoIconos[2].firstElementChild;
+
+// colorNavAbierto.setAttribute("stroke", "red"); 
+// colorNavAbierto.setAttribute("fill", "red"); 
+
+// colorNavCerrado.setAttribute("stroke", "red"); 
+// colorNavCerrado.setAttribute("fill", "red"); 
+
+// colorIconLlamar.setAttribute("stroke", "red"); 
+
+
+
 
 
 

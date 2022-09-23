@@ -11,12 +11,6 @@
     align-items: center;
     margin-top: 1em;
     border-radius:var(--radio-borde);
-
-
-    // box-shadow: 0.25em 0.25em 0.5em var(--quarternary-color);
-    // -moz-window-shadow: 0.25em 0.25em 0.5em var(--quarternary-color);
-    // -webkit-box-shadow: 0.25em 0.25em 0.5em var(--quarternary-color);
-
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -24,10 +18,11 @@
 
   }
 .section-galeria{
-  border-radius: 0 0 0.5em 0.5em;
+  border-radius:  var(--radio-borde);
+  
 }
 .galeria__foto{
-  border-radius: 0 0 0.5em 0.5em;
+
 }
   
   @media screen and (orientation: landscape) {
@@ -48,6 +43,8 @@
   .galeria__btn-atras {
     color: var(--blanco);
     font-family: "Nanum Myeongjo", serif;
+    font-weight:900;
+
     width: 100%;
   }
     p {
@@ -59,11 +56,18 @@
     .section-contacto{
       border-radius:0.5em 0.5em 0 0 ;
       background: var(--color-uno);
+      border: none;
     }
 
     .section-contacto__texto{
-      color: var(--blanco);
-      padding: 2em;
+      color: var(--negro);
+      padding: 1em 1em 1em 1em;
+     display: flex;
+     line-height: 2em;
+     justify-content:center;
+      svg{
+        margin-right: 0.8em;
+      }  
     }
   
   @media screen and (orientation: landscape) {
@@ -138,11 +142,9 @@
     font-size: 1rem;
     text-align: center;
     display: block;
-    color: var(--blanco);
+    color: var(--negro);
     position: relative;
   }
-
-
 
   .titulo-grid::before{
     width: 0;
@@ -157,9 +159,6 @@
     border-left: 0.9em solid transparent;
     border-right: 0.9em solid transparent;
     border-bottom: 1.5em solid var(--blanco);
-
-
-  
   }
 
   
@@ -176,9 +175,6 @@
     border-right: 0.9em solid transparent;
     border-bottom: 1.5em solid var(--color-uno);
     border-radius:var(--radio-borde);
-
-    
-   
    }
   
   ////////////////////GRID//////////////
@@ -193,8 +189,8 @@
   }
 
   img {
-    border-radius:var(--radio-borde);
-   
+    border-radius:var(--radio-borde); 
     min-width:100%;
     vertical-align: middle;
   }
+
