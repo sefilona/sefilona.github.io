@@ -1,3 +1,53 @@
+/*valor de variables globales*/
+var colores = document.documentElement.style;
+
+
+
+var negro = colores.setProperty('--negro', 'rgb(2, 2, 32)');
+var blanco = colores.setProperty('--blanco', 'rgba(207, 109, 207, 0.7)');
+var colorUno = colores.setProperty('--color-uno', 'rgb(230, 193, 227)');
+var colorDos = colores.setProperty('--color-dos', 'rgb(204, 28, 104)');
+
+/*fUNCIÓN PARA CAMBIAR EL COLOR DE LAS VARIABLES CSS*/
+
+// function cambiarColorVariables(color, ){
+
+// }
+
+
+
+/*colores de iconos*/
+// const conjuntoIconos = document.getElementsByTagName("svg");
+
+// const NavAbierto = conjuntoIconos[0].firstElementChild;
+// const NavCerrado = conjuntoIconos[1].firstElementChild;
+// const IconLlamar = conjuntoIconos[2].firstElementChild;
+
+// let colorNavAbierto = colores.getPropertyValue('--negro');
+
+ 
+
+
+
+// colorNavAbierto.setAttribute("stroke", blanco); 
+// colorNavAbierto.setAttribute("fill", blanco); 
+
+// colorNavCerrado.setAttribute("stroke", blanco); 
+// colorNavCerrado.setAttribute("fill", blanco); 
+
+// colorIconLlamar.setAttribute("stroke", blanco); 
+// colorIconLlamar.setAttribute("stroke", blanco); 
+
+
+
+
+
+
+
+
+
+
+
 
 /*llamamos a una función contadora, cuando hay clikc en .foto en contador aunmenta o decrece según la función. Las fotos tienen un número como nombre y su valor se introduce con el método SRC*/
 var num=1;
@@ -35,19 +85,9 @@ enlaceDesplegable.addEventListener('click', ()=>{
     submenu.classList.toggle('nav__menu--activo')
 
 } )
-// const conjuntoIconos = document.getElementsByTagName("svg");
 
-// const colorNavAbierto = conjuntoIconos[0].firstElementChild;
-// const colorNavCerrado = conjuntoIconos[1].firstElementChild;
-// const colorIconLlamar = conjuntoIconos[2].firstElementChild;
 
-// colorNavAbierto.setAttribute("stroke", "red"); 
-// colorNavAbierto.setAttribute("fill", "red"); 
 
-// colorNavCerrado.setAttribute("stroke", "red"); 
-// colorNavCerrado.setAttribute("fill", "red"); 
-
-// colorIconLlamar.setAttribute("stroke", "red"); 
 
 
 

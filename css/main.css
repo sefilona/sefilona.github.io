@@ -313,11 +313,10 @@ img {
 }
 
 :root {
-  scroll-behavior: smooth;
-  --negro:#202020;
+  --negro:rgb(32, 32, 32);
   --blanco:rgba(207, 109, 207, 0.7);
-  --color-uno: #e6c1e3;
-  --color-dos:#cc1c68;
+  --color-uno: rgb(230, 193, 227);
+  --color-dos:rgb(204, 28, 104);
   --radio-borde:0.2em;
 }
 
@@ -328,8 +327,10 @@ img {
   text-decoration: none;
   list-style-type: none;
   scrollbar-color: var(--blanco) var(--negro);
+  transition: background-color 0.2s, visibility 0.2s ease-in-out, font-weight 0.2s ease-in-out;
 }
-* a:hover {
+
+a:hover {
   font-weight: 600;
 }
 
