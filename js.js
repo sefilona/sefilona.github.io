@@ -1,12 +1,31 @@
 /*valor de variables globales*/
 var colores = document.documentElement.style;
 
-
-
+//TEMA ROSA//
+/*
 var negro = colores.setProperty('--negro', 'rgb(2, 2, 32)');
 var blanco = colores.setProperty('--blanco', 'rgba(207, 109, 207, 0.7)');
 var colorUno = colores.setProperty('--color-uno', 'rgb(230, 193, 227)');
 var colorDos = colores.setProperty('--color-dos', 'rgb(204, 28, 104)');
+*/
+//TEMA VERDE
+
+var negro = colores.setProperty('--negro', 'rgb(158, 178, 59)');
+var blanco = colores.setProperty('--blanco', 'rgb(199, 211, 111)');
+var colorUno = colores.setProperty('--color-uno', 'rgb(252, 249, 198)');
+var colorDos = colores.setProperty('--color-dos', 'rgb(224, 222, 202)');
+
+//
+
+//TEMA TURQUESA
+
+/*
+var negro = colores.setProperty('--negro', 'rgb(71, 125, 127)');
+var blanco = colores.setProperty('--blanco', 'rgb(31, 83, 87)');
+var colorUno = colores.setProperty('--color-uno', 'rgb(100, 189, 151)');
+var colorDos = colores.setProperty('--color-dos', 'rgb(194, 255, 187)');
+
+
 
 /*fUNCIÓN PARA CAMBIAR EL COLOR DE LAS VARIABLES CSS*/
 
