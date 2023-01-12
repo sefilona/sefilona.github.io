@@ -133,7 +133,7 @@
   @media screen and (orientation: landscape){
     .grid{
       width: 90%;
-      grid-template-columns: minmax(300px,1fr) 1fr;
+      grid-template-columns: minmax(250px,1fr) 1fr;
     }
   }
 
@@ -180,18 +180,13 @@
   ////////////////////GRID//////////////
   .grid__item{
     width: 100%;
-    min-width: 60%;
-  
-    // padding: 1em 0 1em 0;
-        // box-shadow: 0.25em 0.25em 0.5em var(--quarternary-color);
-        // -moz-window-shadow: 0.25em 0.25em 0.5em var(--quarternary-color);
-        // -webkit-box-shadow: 0.25em 0.25em 0.5em var(--quarternary-color);
-        // border: solid 1px black;
+    
   }
 
   img {
-    border-radius:var(--radio-borde); 
-    min-width:100%;
+    border-radius:var(--radio-borde);
+    width: 100%;
+    
     vertical-align: middle;
   }
 
