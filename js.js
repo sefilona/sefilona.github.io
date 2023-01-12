@@ -73,18 +73,18 @@ var num=1;
 
 function adelante() {
     num++;
-    if (num>3) 
+    if (num>8) 
         num=1;
     var foto=document.getElementById("foto");
-    return foto.src="img/"+num+".jpg";
+    return foto.src="img/carrusel/"+num+".jpg";
 }
 
 function atras() {
     num--;
     if (num<1) 
-        num=3;
+        num=8;
     var foto=document.getElementById("foto");
-    return foto.src="img/"+num+".jpg";
+    return foto.src="img/carrusel/"+num+".jpg";
 }
 //al hacer CLICK en .svg se hace TOGGLE en .activo, para que desapezca el menú
 
