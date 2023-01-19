@@ -73,7 +73,7 @@ var num=1;
 
 function adelante() {
     num++;
-    if (num>8) 
+    if (num>6) 
         num=1;
     var foto=document.getElementById("foto");
     return foto.src="img/carrusel/"+num+".jpg";
@@ -82,7 +82,7 @@ function adelante() {
 function atras() {
     num--;
     if (num<1) 
-        num=8;
+        num=6;
     var foto=document.getElementById("foto");
     return foto.src="img/carrusel/"+num+".jpg";
 }
